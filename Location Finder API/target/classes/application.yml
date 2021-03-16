@@ -1,0 +1,15 @@
+spring:
+    autoconfigure:
+        exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    data:
+        mongodb:
+            database: LocFinderDB
+            uri: mongodb+srv://scd_user:scd_pass@cluster0.jjb0i.mongodb.net/LocFinderDB?retryWrites=true&w=majority
+    spring:
+        security:
+            oauth2:
+                client:
+                    registration:
+                        github:
+                            clientId: a9d1aeca25afba9b6386
+                            clientSecret: 6e3c641cb88f2f3b63a598c37b7540e41a08bfe0
